@@ -4,7 +4,14 @@
 # Then, enter an integer as the input year. The software will then display if 
 # the input would be a leap year or not.
 
-year = input("Enter a year: ")
+# Continue to query for a number until one is given.
+while True:
+  year = input("Enter a year: ")
+  if year.isdigit():
+    break
+  else:
+    print("Invalid input.")
+
 # Convert to int.
 year = int(year)
 
